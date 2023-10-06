@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-image: url('kalash.png');
+            background-size: cover;
+            margin: 0;
+        }
+
+        .header {
+            background-size: cover;
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color: #FFEBCD;
+        }
+
+            .header nav ul {
+                text-align: right;
+            }
+
+        nav ul {
+            padding: 0;
+            text-align: left;
+            margin: 0 10px;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+        .content {
+            padding: 20px 30px;
+            color: #FFEBCD;
+            margin-left: 10px;
+        }
+
+        .form {
+            float: left;
+            width: 40%;
+            padding: 2px;
+            color: #FFEBCD;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            border: 2px solid #FF4500;
+            margin: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form button {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #FF4500;
+            border-radius: 5px;
+            background-color: #FFA07A;
+            color: #000;
+        }
+
+        .table {
+            width: 100%;
+            margin: 10px;
+            border-collapse: collapse;
+        }
+
+            .table th,
+            .table td {
+                padding: 10px;
+                text-align: left;
+                border: 1px solid #FF4500;
+                border-radius: 5px;
+                background-color: #FFA07A;
+                color: #000;
+            }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Рекрутинговий центр </h1>
+        <nav>
+            <ul>
+                <li><a href="#" style="color: #FFEBCD;">Головна</a></li>
+                <li><a href="#" style="color: #FFEBCD;">Про нас</a></li>
+                <li><a href="#" style="color: #FFEBCD;">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Новини</h2>
+        <ul>
+            <li><a href="#" style="color: #FFEBCD;">Повернемо всіх</a></li>
+            <li><a href="#" style="color: #FFEBCD;">Пресреліз</a></li>
+            <li><a href="#" style="color: #FFEBCD;">Нова символіка</a></li>
+            <li><a href="#" style="color: #FFEBCD;">Благодійний забіг</a></li>
+            <li><a href="#" style="color: #FFEBCD;">Інтерв'ю</a></li>
+        </ul>
+    </section>
+
+    <section class="form">
+        <h2>Зв'яжіться з нами</h2>
+        <form>
+            <label for="name" style="color: #FFEBCD;">Ваше ім'я</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email" style="color: #FFEBCD;">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit" style="color: #000;">Відправити</button>
+        </form>
+    </section>
+
+    <section class="table">
+        <h2>Таблиця з даними</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="color: #FFEBCD;">Ім'я</th>
+                    <th style="color: #FFEBCD;">Вік</th>
+                    <th style="color: #FFEBCD;">Місто</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Анна</td>
+                    <td>18</td>
+                    <td>Луцьк</td>
+                </tr>
+                <tr>
+                    <td>Вероніка</td>
+                    <td>18</td>
+                    <td>Київ</td>
+                </tr>
+                <tr>
+                    <td>Михайло</td>
+                    <td>22</td>
+                    <td>Суми</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
